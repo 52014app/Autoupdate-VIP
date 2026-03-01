@@ -31,7 +31,7 @@ env:
 # 编译时调用的 [.config] 文件名称
   CONFIG_FILE: CR660x
 # 源码仓库:分支
-  DEFAULT_SOURCE: xiaowansm5/lede:master
+  DEFAULT_SOURCE: kiddin9/kwrt-packages:master
 # 上传固件到 Github Releases
   UPLOAD_RELEASES: true
 # 上传固件到 Github Artifacts
@@ -158,4 +158,5 @@ jobs:
       if: env.DELETE_OLD_WORKFLOW == 'true' && !cancelled()
       with:
         retain_days: 1
+
         keep_minimum_runs: 3
